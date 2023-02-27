@@ -192,34 +192,3 @@ client.on(Events.MessageCreate, async message => {
             }
     }
 })
-
-// client.on(Events.MessageCreate, async message => {
-//     if (!message.content.startsWith(prefix) || message.author.bot) return;
-//     const args = message.content.slice(prefix.length).trim().split(/ +/);
-//     const command = args.shift().toLowerCase();
-
-//     if (command === 'cooldawn') {
-
-
-//         await message.channel.send({content : `${cooldown}`})
-//     }
-// })
-
-// async function DeleteChat() {
-
-//     let guild = await client.guilds.cache.get('1050075599441514547')
-//     let channel = await guild.channels.fetch('1061237610149842964')
-
-//     await channel.bulkDelete('100').catch(er => { return })
-//     await channel.send({
-//         content: `_**/color**: Change your color._
-//     _**.bl**: Black & white image._
-//     _**.cl**: Colored image._
-//     _**.link**: Share your server link._
-//     `, files: ['https://cdn.discordapp.com/attachments/726891667403178074/931355057709002782/20220107_055457.png']
-//     }).catch(er => { return });
-// }
-
-// setInterval(async () => {
-//     await DeleteChat();
-// }, 60_00);
